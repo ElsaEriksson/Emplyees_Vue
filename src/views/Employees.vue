@@ -13,7 +13,8 @@ const totalPages = ref<number>(1);
 const getEmployees = async (pageNumber: number) => {
   try {
     const data = await getEmployeesData(pageNumber);
-    if (data ) {
+    console.log('Fetched data:', data);
+    if (data) {
     employees.value = data.data;
     page.value = data.page;
     totalPages.value = data.total_pages;
