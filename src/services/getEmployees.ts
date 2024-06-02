@@ -1,7 +1,8 @@
 import axios from "axios";
 import { Employees } from "@/types/Employees";
 
-const API_URL = import.meta.env.VITE_API_URL;
+// const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = "https://reqres.in/api/users";
 
 export const getEmployees = async (
   page: number
