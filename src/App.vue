@@ -1,5 +1,5 @@
 <script  setup lang="ts">
-import Employees from './views/Employees.vue'
+  import Employees from './views/Employees.vue'
 </script>
 
 
@@ -11,7 +11,7 @@ import Employees from './views/Employees.vue'
 
 
 <style scoped>
-.container--employees {
-  width: 100%;
-}
+  .container--employees {
+    width: 100%;
+  }
 </style>

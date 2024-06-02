@@ -31,17 +31,14 @@
     align-items: center;
     margin-top: 3rem;
   }
-
   .pagination .buttonPrevious {
     min-width: 30%;
     justify-self: end;
   }
-
   .pagination .buttonNext {
     min-width: 30%;
     justify-self: start;
   }
-
   button {
     margin: 0 0.5rem;
   }

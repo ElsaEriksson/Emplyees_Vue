@@ -5,7 +5,6 @@ import Pagination from '../components/Pagination.vue';
 import { getEmployees as getEmployeesData } from "../services/getEmployees";
 import { Employee } from "@/types/Employee";
 
-
 const employees = ref<Employee[]>([]);
 const page = ref<number>(1);
 const totalPages = ref<number>(1);
@@ -13,11 +12,10 @@ const totalPages = ref<number>(1);
 const getEmployees = async (pageNumber: number) => {
   try {
     const data = await getEmployeesData(pageNumber);
-    console.log('Fetched data:', data);
     if (data) {
-    employees.value = data.data;
-    page.value = data.page;
-    totalPages.value = data.total_pages;
+      employees.value = data.data;
+      page.value = data.page;
+      totalPages.value = data.total_pages;
     }
   } catch (error) {
     console.error('Error fetching employees:', error);
@@ -44,7 +42,6 @@ onMounted(() => {
     flex-direction: column;
     align-items: center;
   }
-
   @media (min-width: 768px) {
     .employees {
       display: grid;

@@ -35,15 +35,4 @@
     display: flex;
     flex-direction: column;
   }
-
-  /* @media (min-width: 768px) {
-    .employee-card {
-    flex-direction: column;
-    }
-    .avatar {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 0.5rem;
-    }
-  } */
 </style>
